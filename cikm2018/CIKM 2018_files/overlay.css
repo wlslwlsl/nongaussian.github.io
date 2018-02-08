@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 1);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 90%;
+	margin: 0 auto;
+    text-align: left;
+    margin-top: 30px;
+/*	background-color: yellowgreen;*/
+}
+
+.overlay a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay ul li{
+    text-decoration: none;
+    font-size: 20px;
+	text-align: left;
+    color: #aaaaaa;
+    display: inline-block;
+    transition: 0.3s;
+	width: 20%;
+	margin-bottom: 20px;
+	vertical-align: top;
+/*	background-color: wheat;*/
+}
+
+
+.overlay ul li ul{
+	margin-top: 20px;
+}
+ 
+.overlay a:hover, .overlay a:focus {
+    color: #ff9812;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    font-size: 60px;
+}
+
+.overlay ul li ul li{
+	display:block;
+	width: 100%;
+	margin:5px 0;
+	color:#6d6d6d;
+	font-size:14px;
+}
+
+.overlay ul li ul li a{
+	font-size:14px;
+	padding:0;
+	color:#e2e2e2;
+}
+
+.overlay ul li ul li a:hover{
+	color:#ff9812;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media screen and (max-width : 767px ){
+  .overlay {overflow-y: auto;}
+  .overlay ul li{
+	  text-align:left;
+	  font-size:16px;
+	  width: 50%;
+	  display:inline-block;
+	}
+	
+	.overlay a {
+		font-size: 18px;
+		margin:0px;
+	}
+	
+  .overlay-content {
+    top: 5%;
+	  text-align: left;
+	overflow: auto;
+	  height: 90%;
+  }
+	
+  .overlay ul li ul{
+	margin:0px 0 0 0;
+	padding:0;
+	}
+  
+  .overlay ul li ul li{
+	display:block;
+	margin:2px 0;
+	color:#6d6d6d;
+	padding:0px;
+	font-size:14px;
+}
+	
+  .overlay ul li ul li a{
+	margin:0;
+	  font-size: 12px;
+	}
+}

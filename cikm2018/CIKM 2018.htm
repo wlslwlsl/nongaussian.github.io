@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Big Data Mining Research Group</title>
+    <meta name="description" content="Big Data Mining Research Group" />
+    <meta name="keywords" content="CIKM2018" />
+    <meta name="Resource-type" content="Document" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="./CIKM 2018_files/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./CIKM 2018_files/jquery.fullPage.css">
+    <link rel="stylesheet" type="text/css" href="./CIKM 2018_files/examples.css">
+    <link rel="stylesheet" type="text/css" href="./CIKM 2018_files/index.css">
+    <link rel="stylesheet" type="text/css" href="./CIKM 2018_files/overlay.css">
+	<script src="./CIKM 2018_files/jquery.min.js"></script>
+    <script src="./CIKM 2018_files/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./CIKM 2018_files/scrolloverflow.js"></script>
+    <script type="text/javascript" src="./CIKM 2018_files/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="./CIKM 2018_files/examples.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				'navigation': true,
+				'navigationPosition': 'right',
+				'navigationTooltips': ['Index', 'News', 'Welcome', 'Key Dates', 'Organizers', 'Sponsors', 'Contact'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage','5thpage', '6thpage', 'lastPage'],
+				menu: '#menu',
+				scrollOverflow: true,
+				scrollOverflowOptions: {
+					scrollbars: true,
+			        mouseWheel: true,
+			        hideScrollbars: false,
+			        fadeScrollbars: false,
+			        disableMouse: true
+				},
+				
+				
+				'afterLoad': function(anchorLink, index){
+					if(index == 1){
+						$('.logo, .logo2').removeClass('current');
+					}
+					else{
+						
+						$('.logo, .logo2').addClass('current');
+					}
+					
+					if(index == 2){
+						$('.newsctn').addClass('current');
+					}
+					
+					
+				}
+				
+			});
+			
+		
+		(function blink() {
+			$('#flicker').fadeOut(500).fadeIn(500, blink); 
+		});
+		
+		});
+		
+	</script>
+  </head>
+  <body class="index">
+    <ul id="menu">
+      <a href="http://www.cikm2018.units.it/">
+        <li class="logo"><br />
+        </li>
+      </a>
+      <div style="float:right; font-size:30px;cursor:pointer; padding:20px; background-color:#f9ba13; color:#ffffff" onclick="openNav()">&#9776;</div>
+    </ul>
+    <div id="myNav" class="overlay"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <ul>
+          <li><a href="#">Home</a>
+            <ul>
+              <li><a href="#secondPage" onclick="closeNav()">News</a></li>
+              <li><a href="#3rdPage" onclick="closeNav()">Welcome
+                  Message</a></li>
+              <li><a href="#4thpage" onclick="closeNav()">Key Dates</a></li>
+              <li><a href="#5thpage" onclick="closeNav()">Organizing
+                  &amp; Supporting <br />
+                  Institutions</a></li>
+              <li><a href="#6thpage" onclick="closeNav()">Sponsors</a></li>
+            </ul>
+          </li>
+          <li class="title">Organizers <ul> <li><a href="organizingcommittee.html">Organizing Committee</a></li> </ul></li>
+          <li>Venue
+            <ul>
+              <li><a href="http://www.centrocongressilingotto.it/EN/Pages/Home.aspx"
+                  target="_blank">Venue</a></li>
+              <li><a href="http://www.turismotorino.org/docs/EN/A24/territory" target="_blank">Visiting
+                  Turin</a></li>
+            </ul>
+            </li>
+        </ul>
+      </div>
+    </div>
+    <!------------------------------------------- section 0 ----------------------------------------------->
+    <div id="fullpage">
+      <div class="section" id="section0">
+        <div class="contain">
+          <div class="padding">
+            <h1>From Big Data and Big Information to Big Knowledge</h1>
+            <div class="hpcol hpcol5">
+              <h3>CIKM 2018 International Conference on Information and
+                Knowledge Management</h3>
+              <div class="box yellow">22 - 26 October 2018</div>
+              <a href="http://www.centrocongressilingotto.it/EN/Pages/Home.aspx"
+                target="_blank">
+                <div class="box red">Lingotto, Turin, Italy</div>                                
+              </a> </div>
+              <br>
+              <a href="CIKM2018AnalytiCup.html"
+                target="_blank">
+                <div class="box red">CIKM 2018 AnalytiCup call for
+                    proposals</div>
+              <br>
+              <a href="sponsorship.html"
+                target="_blank">
+                <div class="box red">CIKM 2018 call for
+                    sponsorships and exhibitions</div>
+              <br>
+            <div class="clearboth"></div>
+          </div>
+          <div class="hpfooter">
+            <div class="padding">
+              <div class="left">
+                <div class="col">
+                  <div class="title">organised by</div>
+                  <a href="https://www.units.it/" target="_blank" title="UNITS"><img
+
+                      src="images/logo-units.png" /></a> </div>
+                <div class="col">
+                  <div class="title">supported by</div>
+                  <a href="https://www.unito.it/" target="_blank" title="UNITO"><img
+
+                      src="images/logo-unito.png" /></a> </div>
+                <div class="col">
+                  <div class="title">hosted by</div>
+                  <a href="https://www.acm.org/" target="_blank" title="ACM"><img
+
+                      src="images/logo-acm.jpg" /></a> <a href="http://sigir.org/"
+
+                    target="_blank" title="SIGIR"><img src="images/logo-sigir.jpg" /></a>
+                  <a href="http://www.sigweb.org/" target="_blank" title="SIGWEB"><img
+
+                      src="images/logo-sigweb.jpg" /></a> </div>
+                <br />
+                <br />
+                Copyright © CIKM2018. All Rights Reserved. </div>
+              <div class="clearboth"></div>
+            </div>
+          </div>
+          <div class="arrow"><a href="#secondPage" class="moveSectionDown"></a></div>
+          <div class="spacergeneral"></div>
+        </div>
+      </div>
+      <!------------------------------------------- section 1 ------------------------------------------->
+      <div class="section moveDown" id="section7">
+        <div class="newsctn">
+          <h1>News</h1>
+          <!-- COMMENTATO PER LE NEWS 	<div class="keyctn">
+				<a href="CIKM_AnalytiCup_task3.html">					<div class="keyleft">
+						<div class="keydate">1</div>						<div class="keymonth">May<br>2017</div>
+						<div class="clearboth"></div>					</div>
+					<div class="keyright"><div class="keyrightctn"><span>Lazada Product Title Quality Challenge</span></div></div>					<div class="clearboth"></div>
+				</a>				</div>
+				<div class="keyctn">				<a href="CIKM_AnalytiCup_task2.html">
+					<div class="keyleft">						<div class="keydate">1</div>
+						<div class="keymonth">Apr<br>2017</div>						<div class="clearboth"></div>
+					</div>					<div class="keyright"><div class="keyrightctn"><span>CIKM AnalytiCup - DataSpark Mobility Open-Task Challenge Launch</span></div></div>
+					<div class="clearboth"></div>				</a>
+				</div>				<div class="keyctn">
+				<a href="callforindustry.html">					<div class="keyleft">
+						<div class="keydate">30</div>						<div class="keymonth">Mar<br>2017</div>
+						<div class="clearboth"></div>					</div>
+					<div class="keyright"><div class="keyrightctn"><span>Call for Case Studies is now available</span></div></div>					<div class="clearboth"></div>
+				</a>				</div>
+				<div class="keyctn">				<a href="CIKM_AnalytiCup_task1.html">
+					<div class="keyleft">						<div class="keydate">15</div>
+						<div class="keymonth">Mar<br>2017</div>						<div class="clearboth"></div>
+					</div>					<div class="keyright"><div class="keyrightctn"><span>CIKM AnalytiCup - Shenzhen Meteorological Bureau-Alibaba Short-Term Quantitative Precipitation Forecasting Challenge Launch</span></div></div>
+					<div class="clearboth"></div>				</a>
+				</div>				<div class="keyctn">
+				<a href="tutorial.html">					<div class="keyleft">
+						<div class="keydate">18</div>						<div class="keymonth">Jan<br>2017</div>
+						<div class="clearboth"></div>					</div>
+					<div class="keyright"><div class="keyrightctn"><span>Call for Tutorials is now available</span></div></div>					<div class="clearboth"></div>
+				</a>				</div>
+				<div class="keyctn">				<a href="callfordemo.html">
+					<div class="keyleft">						<div class="keydate">18</div>
+						<div class="keymonth">Jan<br>2017</div>						<div class="clearboth"></div>
+					</div>					<div class="keyright"><div class="keyrightctn"><span>Call for Demonstrations is now available</span></div></div>
+					<div class="clearboth"></div>				</a>
+				</div>				<div class="keyctn">
+				<a href="callforworkshop.html">					<div class="keyleft">
+						<div class="keydate">17</div>						<div class="keymonth">Jan<br>2017</div>
+						<div class="clearboth"></div>					</div>
+					<div class="keyright">						<div class="keyrightctn"><span>Call for Workshops is now available</span></div></div>
+					<div class="clearboth"></div>				</a>
+				</div>				<div class="keyctn">
+				<a href="CIKM_AnalytiCup_details.html">					<div class="keyleft">
+						<div class="keydate">07</div>						<div class="keymonth">Jan<br>2017</div>
+						<div class="clearboth"></div>					</div>
+					<div class="keyright"><div class="keyrightctn"><span>Call for AnalytiCup Challenges is now available</span></div></div>					<div class="clearboth"></div>
+				</a>				</div> COMMENTATO PER LE NEWS (FINE)-->
+          <div class="keyctn"> <a href="sponsorship.html">
+              <div class="keyleft">
+                <div class="keydate">23</div>
+                <div class="keymonth">December<br />
+                  2017</div>
+                <div class="clearboth"></div>
+              </div>
+              <div class="keyright">
+                <div class="keyrightctn"><span>CIKM 2018 call for
+                    sponsorships and exhibitions</span></div>
+              </div>
+              <div class="clearboth"></div>
+            </a> </div>
+          <!-- Organizer -->
+          <div class="keyctn"> <a href="CIKM2018AnalytiCup.html">
+              <div class="keyleft">
+                <div class="keydate">15</div>
+                <div class="keymonth">December<br />
+                  2017</div>
+                <div class="clearboth"></div>
+              </div>
+              <div class="keyright">
+                <div class="keyrightctn"><span>CIKM 2018 AnalytiCup call for
+                    proposals</span></div>
+              </div>
+              <div class="clearboth"></div>
+            </a> </div>
+          <!-- Organizer -->
+          <div class="keyctn"> <a href="http://www.cikm2018.units.it/">
+              <div class="keyleft">
+                <div class="keydate">22</div>
+                <div class="keymonth">October<br />
+                  2017</div>
+                <div class="clearboth"></div>
+              </div>
+              <div class="keyright">
+                <div class="keyrightctn"><span>CIKM 2018 Web site is online!</span></div>
+              </div>
+              <div class="clearboth"></div>
+            </a> </div>
+          <!-- Organizer -->
+          <!--				<div class="cta"><a href="callforpaper.html">More Details</a></div>-->
+          <div class="arrow"><a href="#3rdPage" class="moveSectionDown"></a></div>
+        </div>
+      </div>
+      <!------------------------------------------- section 2 ------------------------------------------->
+      <div class="section moveDown" id="section1">
+        <div class="intro">
+          <div class="padding40">
+            <h1>Welcome</h1>
+            <p>The 27th ACM International Conference on Information and
+              Knowledge Management (CIKM) takes place on October 22-26, 2018 at
+              <a href="http://www.centrocongressilingotto.it/EN/Pages/Home.aspx"
+
+                target="_blank">'Lingotto', Turin, Italy</a>. Our theme for 2018
+              is "From Big Data and Big Information to Big Knowledge".
+              Strategically positioned at the intersection of research on the
+              management of knowledge, information, and data, CIKM is uniquely
+              situated to highlight technologies and insights that materialize
+              the Big Data, Big Information and Big Knowledge vision of the
+              future. <br />
+              <br />
+              Since 1992, CIKM has successfully brought together leading
+              researchers and developers from the knowledge management,
+              information retrieval, and database communities. Through the
+              publication, presentation, and discussion of high-quality applied
+              and theoretical research findings, CIKM attendees shape the future
+              by identifying challenging problems facing the creation of
+              advanced knowledge and information systems, and by providing
+              insightful solution approaches for those problems. With CIKM 2018,
+              we will continue the tradition of promoting collaboration among
+              multiple areas through broad and interdisciplinary programs for
+              the conference, including workshops, tutorials, industry speakers,
+              keynote speakers, research papers and posters, demonstrations,
+              competitions, and other special events. </p>
+            <div class="arrow"><a href="#4thpage" class="moveSectionDown"></a></div>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <!------------------------------------------- section 3 ------------------------------------------->
+      <div class="section" id="section3">
+        <div class="padding4020">
+          <h1>Key Dates</h1>
+          <!-- RIMOSSA LA INTRO <div class="intro3">The Conference on Information and Knowledge Management (CIKM) provides a unique venue for 
+			industry and academia to present and discuss state-of-the-art research on search and discovery, data mining and database systems, all at 			a single conference. CIKMÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢17 comes to Singapore on Nov 6-10, 2017, with the theme of Smart Cities, Smart Nations. Lying at the intersection of databases, 
+			information retrieval and knowledge management, CIKM is uniquely placed to highlight technologies and insights that materialize the ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œSmart Cities, Smart NationsÃƒÂ¢Ã¢â€šÂ¬Ã‚Â 			vision shared by many urban areas and their countries.</div> RIMOSSA LA INTRO (FINE) -->
+          <div class="hpkeydates first">
+            <h2>Call for Research Papers</h2>
+            <div class="keymainctn">
+              <div class="keyctn">
+                <div class="keyleft">
+                  <div class="keydate">15</div>
+                  <div class="keymonth">May<br />
+                    2018</div>
+                  <div class="clearboth"></div>
+                </div>
+                <div class="keyright">
+                  <div class="keyrightctn"><span>Full and Short Research Paper
+                      Abstract Submission Deadline</span></div>
+                </div>
+                <div class="clearboth"></div>
+              </div>
+              <!-- Organizer -->
+              <div class="keyctn">
+                <div class="keyleft">
+                  <div class="keydate">22</div>
+                  <div class="keymonth">May<br />
+                    2018</div>
+                  <div class="clearboth"></div>
+                </div>
+                <div class="keyright">
+                  <div class="keyrightctn"><span>Full and Short Research Paper
+                      Submission Deadline</span></div>
+                </div>
+                <div class="clearboth"></div>
+              </div>
+              <!-- Organizer -->
+              <div class="keyctn">
+                <div class="keyleft">
+                  <div class="keydate">6</div>
+                  <div class="keymonth">August<br />
+                    2018</div>
+                  <div class="clearboth"></div>
+                </div>
+                <div class="keyright">
+                  <div class="keyrightctn"><span>Full and Short Research Paper
+                      Acceptance Notification</span></div>
+                </div>
+                <div class="clearboth"></div>
+              </div>
+              <!-- Organizer -->
+              <div class="keyctn">
+                <div class="keyleft">
+                  <div class="keydate">27</div>
+                  <div class="keymonth">August<br />
+                    2018</div>
+                  <div class="clearboth"></div>
+                </div>
+                <div class="keyright">
+                  <div class="keyrightctn"><span>Full and Short Research Paper
+                      Camera Ready Submission Deadline</span></div>
+                </div>
+                <div class="clearboth"></div>
+              </div>
+              <!-- Organizer -->
+              <!-- RIMOSSO PER ORA <div class="cta"><a href="callforpaper.html">More Details</a></div> -->
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- hpkeydates -->
+          <div class="hpkeydates">
+            <h2>Call for Demonstrations</h2>
+            <div class="keymainctn">
+              <div class="keyctn">
+                <div class="keyleft">
+                  <div class="keydate">16</div>
+                  <div class="keymonth">May <br />
+                    2018</div>
+                  <div class="clearboth"></div>
+                </div>
+                <div class="keyright">
+                  <div class="keyrightctn"> <span>Demo Abstract Submission
+                      Deadline</span> </div>
+                </div>
+                <div class="clearboth"></div>
+              </div>
+              <!-- Organizer -->
+              <div class="keyctn">
+                <div class="keyleft">
+                  <div class="keydate">23</div>
+                  <div class="keymonth">May <br />
+                    2018</div>
+                  <div class="clearboth"></div>
+                </div>
+                <div class="keyright">
+                  <div class="keyrightctn"><span>Demo Submission Deadline</span></div>
+                </div>
+                <div class="clearboth"></div>
+              </div>
+              <div class="keyctn">
+                <div class="keyleft">
+                  <div class="keydate">6</div>
+                  <div class="keymonth">Aug <br />
+                    2018</div>
+                  <div class="clearboth"></div>
+                </div>
+                <div class="keyright">
+                  <div class="keyrightctn"><span>Demo Acceptance Notification</span></div>
+                </div>
+                <div class="clearboth"></div>
+              </div>
+              <div class="keyctn">
+                <div class="keyleft">
+                  <div class="keydate">27</div>
+                  <div class="keymonth">Aug <br />
+                    2018</div>
+                  <div class="clearboth"></div>
+                </div>
+                <div class="keyright">
+                  <div class="keyrightctn"><span>Demo Camera Ready Submission
+                      Deadline</span></div>
+                </div>
+                <div class="clearboth"></div>
+              </div>
+              <!-- RIMOSSO PER ORA <div class="cta"><a href="callfordemo.html">More Details</a></div> -->
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- hpkeydates -->
+          <div class="hpkeydates">
+            <h2>Call for Case Studies</h2>
+            <div class="keymainctn">
+              <div class="keyctn">
+                <div class="keyleft">
+                  <div class="keydate">16</div>
+                  <div class="keymonth">May <br />
+                    2018</div>
+                  <div class="clearboth"></div>
+                </div>
+                <div class="keyright">
+                  <div class="keyrightctn"> <span>Case Study Abstract
+                      Submission Deadline</span> </div>
+                </div>
+                <div class="clearboth"></div>
+              </div>
+              <!-- Organizer -->
+              <div class="keyctn">
+                <div class="keyleft">
+                  <div class="keydate">23</div>
+                  <div class="keymonth">May <br />
+                    2018</div>
+                  <div class="clearboth"></div>
+                </div>
+                <div class="keyright">
+                  <div class="keyrightctn"><span>Case Study Submission Deadline</span></div>
+                </div>
+                <div class="clearboth"></div>
+              </div>
+              <div class="keyctn">
+                <div class="keyleft">
+                  <div class="keydate">6</div>
+                  <div class="keymonth">Aug <br />
+                    2018</div>
+                  <div class="clearboth"></div>
+                </div>
+                <div class="keyright">
+                  <div class="keyrightctn"><span>Case Study Acceptance
+                      Notification</span></div>
+                </div>
+                <div class="clearboth"></div>
+              </div>
+              <div class="keyctn">
+                <div class="keyleft">
+                  <div class="keydate">27</div>
+                  <div class="keymonth">August <br />
+                    2018</div>
+                  <div class="clearboth"></div>
+                </div>
+                <div class="keyright">
+                  <div class="keyrightctn"><span>Case Study Camera Ready
+                      Submission Deadline</span></div>
+                </div>
+                <div class="clearboth"></div>
+              </div>
+              <!-- RIMOSSO PER ORA <div class="cta"><a href="callforindustry.html">More Details</a></div> -->
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- hpkeydates -->
+          <div class="hpkeydates">
+            <h2>Call for Tutorials</h2>
+            <div class="keymainctn">
+              <div class="keyctn">
+                <div class="keyleft">
+                  <div class="keydate">5</div>
+                  <div class="keymonth">July<br />
+                    2018</div>
+                  <div class="clearboth"></div>
+                </div>
+                <div class="keyright">
+                  <div class="keyrightctn"> <span>Tutorial Proposal Deadline</span>
+                  </div>
+                </div>
+                <div class="clearboth"></div>
+              </div>
+              <!-- Organizer -->
+              <div class="keyctn">
+                <div class="keyleft">
+                  <div class="keydate">5</div>
+                  <div class="keymonth">August<br />
+                    2018</div>
+                  <div class="clearboth"></div>
+                </div>
+                <div class="keyright">
+                  <div class="keyrightctn"><span>Tutorial Proposal Acceptance
+                      Notification</span></div>
+                </div>
+                <div class="clearboth"></div>
+              </div>
+              <!-- Organizer -->
+              <div class="keyctn">
+                <div class="keyleft">
+                  <div class="keydate">27</div>
+                  <div class="keymonth">August<br />
+                    2018</div>
+                  <div class="clearboth"></div>
+                </div>
+                <div class="keyright">
+                  <div class="keyrightctn"><span>Tutorial Summary Camera Ready
+                      Submission Deadline</span></div>
+                </div>
+                <div class="clearboth"></div>
+              </div>
+              <!-- Organizer -->
+              <!--RIMOSSO PER ORA <div class="keyctn">
+                        	<div class="keyleft">                            	<div class="keydate">26</div>
+                                <div class="keymonth">October <br> 2018</div>                                <div class="clearboth"></div>
+                            </div>                        	<div class="keyright"><div class="keyrightctn"><span>Presentation of conventional tutorials</span></div></div>
+                        	<div class="clearboth"></div>                    </div> -->
+              <!-- RIMOSSO PER ORA <div class="cta"><a href="tutorial.html">More Details</a></div> -->
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- hpkeydates -->
+          <!-- RIMOSSO PER ORA <div class="hpkeydates">
+                    <h2>CIKM AnalytiCup</h2>                    <div class="keymainctn">
+                        <div class="keyctn">                        	<div class="keyleft">
+                            	<div class="keydate">15</div>                                <div class="keymonth">
+                                  Mar <br>2017</div>                                <div class="clearboth"></div>
+                            </div>                        	<div class="keyright">
+                        	  <div class="keyrightctn">                        	    <span>Shenzhen Meteorological Bureau-Alibaba Short-Term Quantitative Precipitation Forecasting Challenge Launch</span>
+                   	      	  </div>                          </div>
+                        	<div class="clearboth"></div>                        </div> -- RIMOSSO PER ORA (FINE)-->
+          <!-- Organizer -->
+          <!-- RIMOSSO PER ORA <div class="keyctn">
+                        	<div class="keyleft">                            	<div class="keydate">1</div>
+                                <div class="keymonth">                                  Apr <br>2017</div>
+                                <div class="clearboth"></div>                            </div>
+                        	<div class="keyright">                        	  <div class="keyrightctn">
+                        	    <span>DataSpark Mobility Open-Task Challenge Launch</span>                   	      	  </div>
+                          </div>                        	<div class="clearboth"></div>
+                        </div> -- RIMOSSO PER ORA (FINE)-->
+          <!-- Organizer -->
+          <!-- RIMOSSO PER ORA <div class="cta"><a href="CIKM_AnalytiCup_details.html">More Details</a></div>
+                       <br><br>                
+             </div>     	</div>-- RIMOSSO PER ORA (FINE)-->
+          <!-- hpkeydates -->
+          <div class="hpkeydates">
+            <h2>Call for Workshops</h2>
+            <div class="keymainctn">
+              <div class="keyctn">
+                <div class="keyleft">
+                  <div class="keydate">20</div>
+                  <div class="keymonth">March <br />
+                    2018</div>
+                  <div class="clearboth"></div>
+                </div>
+                <div class="keyright">
+                  <div class="keyrightctn"> <span>Workshop Proposal Deadline</span>
+                  </div>
+                </div>
+                <div class="clearboth"></div>
+              </div>
+              <!-- Organizer -->
+              <div class="keyctn">
+                <div class="keyleft">
+                  <div class="keydate">5</div>
+                  <div class="keymonth">April <br />
+                    2018</div>
+                  <div class="clearboth"></div>
+                </div>
+                <div class="keyright">
+                  <div class="keyrightctn"><span>Workshop Proposal Acceptance
+                      Notification</span></div>
+                </div>
+                <div class="clearboth"></div>
+              </div>
+              <div class="keyctn">
+                <div class="keyleft">
+                  <div class="keydate">27</div>
+                  <div class="keymonth">August <br />
+                    2018</div>
+                  <div class="clearboth"></div>
+                </div>
+                <div class="keyright">
+                  <div class="keyrightctn"><span>Workshop Paper Camera Ready
+                      Submission Deadline</span></div>
+                </div>
+                <div class="clearboth"></div>
+              </div>
+              <!-- RIMOSSO PER ORA <div class="cta"><a href="callforworkshop.html">More Details</a></div> -->
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- hpkeydates -->
+          <div class="clearboth"></div>
+          <div class="arrow"><a href="#5thpage" class="moveSectionDown"></a></div>
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+        <!-- container --> </div>
+      <!------------------------------------------- section 4 ------------------------------------------->
+      <div class="section" id="section2">
+        <div class="intro2">
+          <div class="profileall">
+            <h1>Organizing Institutions</h1>
+            <a href="https://www.units.it/" target="_blank">
+              <div class="profilectn"> <img src="images/logo-units.png" />
+                <div class="profilename">
+                  <h1>University of Trieste </h1>
+                </div>
+              </div>
+            </a>
+            <!-- Organizer -->
+            <!-- RIMOSSO PER ORA <a href="https://larc.smu.edu.sg/" target="_blank">
+                <div class="profilectn">                	<img src="images/logo-larc.jpg">
+                    <div class="profilename">                      <h1>Living Analytics Research <br>
+					  Centre </h1>                    </div>
+                </div></a> -->
+            <!-- Organizer -->
+            <!-- RIMOSSO PER ORA <a href="http://illinois.edu/index.html" target="_blank">
+              <div class="profilectn">                	<img src="images/logo-uiuc.jpg">
+                    <div class="profilename">                      <h1>University of Illinois at Urbana-Champaign
+				</h1>                    </div>
+              </div></a> -->
+            <!-- Organizer -->
+            <h1>Supporting Institutions</h1>
+            <a href="https://www.unito.it/" target="_blank">
+              <div class="profilectn"> <img src="images/logo-unito.png" />
+                <div class="profilename">
+                  <h1>University of Turin </h1>
+                </div>
+              </div>
+            </a>
+            <!-- Organizer -->
+            <!-- RIMOSSO PER ORA <a href="http://www.iskosg.org/" target="_blank">
+                <div class="profilectn">                	<img src="images/logo-isko2.jpg" alt="ISKO"/>
+                    <div class="profilename">                      <h1>International Society for Knowledge Organization</h1>
+                    </div>                </div></a> -->
+            <!-- Organizer --> </div>
+          <div class="arrow"><a href="#6thpage" class="moveSectionDown"></a></div>
+          <div class="yellowbg"></div>
+        </div>
+      </div>
+      <!------------------------------------------- section 5 ------------------------------------------->
+      <div class="section" id="section8">
+        <div class="profileall">
+          <!--			<h1>Sponsors</h1>-->
+          <h1 style="color:black;">Series Sponsors</h1>
+          <div class="sponsors_logo"><a href="https://www.acm.org/" target="_blank"><img
+
+                src="images/logo-acm.jpg" alt="ACM" /></a></div>
+          <div class="sponsors_logo"><a href="http://sigir.org/" target="_blank"><img
+
+                src="images/logo-sigir.jpg" alt="SIGIR" /></a></div>
+          <div class="sponsors_logo"><a href="http://www.sigweb.org/" target="_blank"><img
+
+                src="images/logo-sigweb.jpg" alt="SIGWEB" /></a></div>
+        </div>
+        <div class="arrow"><a href="#lastPage" class="moveSectionDown"></a></div>
+      </div>
+      <!------------------------------------------- section 6 ------------------------------------------->
+      <div class="section moveDown" id="section6">
+        <div class="footer">
+          <div class="maincol maincol10"> <img src="./CIKM 2018_files/logoCIKM2018.jpg" class="logo2" />
+            <div class="footer_fb">
+              <h3>Follow Us</h3>
+              <a href="https://www.facebook.com/cikm2018/" target="_blank"><img src="images/facebook.png" /></a> </div>
+            <div class="clearboth"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
+  </body>
+</html>
