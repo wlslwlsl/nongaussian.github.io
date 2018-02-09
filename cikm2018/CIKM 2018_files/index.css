@@ -495,6 +495,26 @@ hr{ height:1px; width:80%; border:0; background-color:#aeaeae; margin:20px auto 
 	vertical-align:top;
 }
 
+.memberpic{
+	display:inline-block;
+	width:80%;
+	padding:5px;
+	background-color:#ffffff;
+	max-width:420px;
+	margin:0px;
+	vertical-align:top;
+}
+
+.memberpic img{
+	width:100%;
+}
+
+.memberpic:hover{
+	background-color:#dedede;
+}
+
+
+
 .profilectn:hover{
 	background-color:#dedede;
 }
@@ -683,6 +703,11 @@ hr{ height:1px; width:80%; border:0; background-color:#aeaeae; margin:20px auto 
 	line-height:35px;
 }
 
+.membername{
+	font-size:16px;
+	line-height: 20px;
+	display:inline-block;
+}
 
 .keymonth{
 	font-size:12px;
